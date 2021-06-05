@@ -5,13 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="01.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
-<body>
+<body  onload="myFunction()" style="margin:0;">
+
+
+    <div id="loader" style="background-color: black; width: 100%; height: 100vh; overflow: hidden;">
+        <div id="loader_mini1"><div class="animation_2"></div></div>
+      </div>
+
+
 <!-- slide bar starting -->
+
 <div id="mySidenav" class="sidenav">
   
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
+    <a href="#">About Us</a>
     <a href="#">Services</a>
     <a href="#">Clients</a>
     <a href="#">Contact</a>
@@ -20,18 +30,26 @@
 </div>
 </div>
 <!-- slidebar ending -->
+<div id="myDiv" class="mme">
 <!-- top bar starting -->
 <div class="grid-layout-1">
-  <div class="g11"><p class="t1"><img src="Victim-Logo.png" alt="" height="40px"></p>
+  <div class="g11"><p class="t1"><img src="Victim-Logo.png" alt="" height="40px" ></p>
   </div>
-  <div class="g12"><span style="font-size:30px;cursor:pointer; align-items: right; position: absolute; right: 0;   padding: 40px 8px 50px 32px; padding-right: 60px;" onclick="openNav()">&#9776;</span>
+  <div class="g12"><span style="font-size:30px;cursor:pointer; align-items: right; position: absolute; right: 0;   padding: 40px 8px 50px 32px; padding-right: 60px;" onclick="openNav()" id="openbutton">&#9776;</span>
+<div class="fg">
+    <div class="fg1">Home</div>
+    <div class="fg2">About Us</div>
+    <div class="fg3">Services</div>
+    <div class="fg4">Contact</div>
+</div>
+
   </div>
 </div>
 <!-- top bar ending -->
 <!-- main starting -->
 <div class="grid-layout-2" ><img src="men in black.png" alt="" height="500px" style="position: absolute; right: 0; overflow-x: hidden;">
   <div class="g21"> <h1>We Make
-    <span style="color: rgb(225, 0, 102);"><div class="animation"> Website</div></span>
+    <span style="color: rgb(225, 0, 102);" class="line"><span class="animation"> Website</span><div class="cursor"></div></span>
      
      For Humans. <br><br><div class="t2">
     Behind the word mountains, far from the countries Vokalia and<br>Conson antia, there seedBehind the word mountains, far from the <br>countries Vokalia and Conson antia, there seed
@@ -69,7 +87,7 @@
 
 </div>
 <div class="grid-layout-5">
-    <div class="gp1"><div class="g51s">
+    <div class="gp1" data-aos="fade-up"><div class="g51s">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-book"
             viewBox="0 0 16 16" style="color: rgb(255, 255, 255);">
             <path
@@ -80,14 +98,14 @@
     </div>
     </div>
     
-    <div class="gp2"><div class="g51s">
+    <div class="gp2" data-aos="fade-up"><div class="g51s">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-map" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
           </svg><br>
     <h3>Web Design</h3>
     <p>We offer professional web design services at affordable rates to help your business <br> attract more</p>
     </div></div>
-    <div class="gp3"><div class="g51s">
+    <div class="gp3" data-aos="fade-up"><div class="g51s">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
             <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
             <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
@@ -123,7 +141,7 @@
 </div>
 </div>
 <div class="mns1">
-<div class="mn11">
+<div class="mn11" data-aos="fade-up">
 <div style="height: 3px; background-color: rgb(225, 0, 102);"></div>
 <div style="padding: 20px; "><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-snow2"
       viewBox="0 0 16 16" style="color:rgb(225, 0, 102);">
@@ -134,7 +152,7 @@
 <p style="font-size: 20px;">Lorem ipsum dolor sit, consectetur adipiscing elit. Ut elit ullamcorper mattis, pulvinar dapibus leo.</p>
 </div>
 </div>
-<div class="mn12">
+<div class="mn12" data-aos="fade-up">
 <div style="padding: 20px; "><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-file-richtext" viewBox="0 0 16 16" style="color:rgb(225, 0, 102);">
   <path d="M7 4.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V7.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V7s1.54-1.274 1.639-1.208zM5 9a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
   <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
@@ -144,7 +162,7 @@
 </div>
 </div>
 
-<div class="mn13">
+<div class="mn13" data-aos="fade-up">
 <div style="height: 3px; background-color: rgb(225, 0, 102);"></div>
 <div style="padding: 20px; "><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16" style="color:rgb(225, 0, 102);">
   <path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0zM2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z"/>
@@ -154,7 +172,7 @@
 </div>
 </div>
 
-<div class="mn14">
+<div class="mn14" data-aos="fade-up">
 <div style="padding: 20px; "><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-ui-checks-grid" viewBox="0 0 16 16" style="color:rgb(225, 0, 102);">
 <path d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-3zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-3zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-3zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0l2-2z"/>
 </svg>
@@ -163,7 +181,7 @@
 </div>
 </div>
 
-<div class="mn15">
+<div class="mn15" data-aos="fade-up">
 <div style="height: 3px; background-color: rgb(225, 0, 102);"></div>
 <div style="padding: 20px; "><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-cloudy" viewBox="0 0 16 16" style="color:rgb(225, 0, 102);">
   <path d="M13.405 8.527a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 14.5H13a3 3 0 0 0 .405-5.973zM8.5 5.5a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1-.001 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4.002 4.002 0 0 1 8.5 5.5z"/>
@@ -173,7 +191,7 @@
 </div>
 </div>
 
-<div class="mn16">
+<div class="mn16" data-aos="fade-up">
 <div style="padding: 20px; "><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16" style="color:rgb(225, 0, 102);">
 <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
 </svg>
@@ -197,7 +215,7 @@
     </div>
 
     <div class="grid-layout-6">
-        <div class="g61" onmouseover="E1()" onmouseout="D1()">
+        <div class="g61" onmouseover="E1()" onmouseout="D1()" data-aos="fade-up">
             <img src="g1.jpg" class="hp1">
             <div class="im11">
                 <div style="position: absolute; bottom: 0; padding: 30px; visibility: hidden; color: white;"
@@ -207,7 +225,7 @@
                 </div>
             </div>
         </div>
-        <div class="g62" onmouseover="E2()" onmouseout="D2()">
+        <div class="g62" onmouseover="E2()" onmouseout="D2()" data-aos="fade-up">
             <img src="g2.jpg" class="hp1">
             <div class="im12">
                 <div style="position: absolute; bottom: 0; padding: 30px; visibility: hidden; color: white;"
@@ -217,7 +235,7 @@
                 </div>
             </div>
         </div>
-        <div class="g63" onmouseover="E3()" onmouseout="D3()">
+        <div class="g63" onmouseover="E3()" onmouseout="D3()" data-aos="fade-up">
             <img src="g3.jpg" class="hp1">
             <div class="im13">
                 <div style="position: absolute; bottom: 0; padding: 30px; visibility: hidden; color: white;"
@@ -227,7 +245,7 @@
                 </div>
             </div>
         </div>
-        <div class="g64" onmouseover="E4()" onmouseout="D4()">
+        <div class="g64" onmouseover="E4()" onmouseout="D4()" data-aos="fade-up">
             <img src="g4.jpg" class="hp1">
             <div class="im14">
                 <div style="position: absolute; bottom: 0; padding: 30px; visibility: hidden; color: white;"
@@ -237,7 +255,7 @@
                 </div>
             </div>
         </div>
-        <div class="g65" onmouseover="E5()" onmouseout="D5()">
+        <div class="g65" onmouseover="E5()" onmouseout="D5()" data-aos="fade-up">
             <img src="g5.jpg" class="hp1">
             <div class="im15">
                 <div style="position: absolute; bottom: 0; padding: 30px; visibility: hidden; color: white;"
@@ -247,7 +265,7 @@
                 </div>
             </div>
         </div>
-        <div class="g66" onmouseover="E6()" onmouseout="D6()">
+        <div class="g66" onmouseover="E6()" onmouseout="D6()" data-aos="fade-up">
             <img src="g6.jpg" class="hp1">
             <div class="im16">
                 <div style="position: absolute; bottom: 0; padding: 30px; visibility: hidden; color: white;"
@@ -257,7 +275,7 @@
                 </div>
             </div>
         </div>
-        <div class="g67" onmouseover="E7()" onmouseout="D7()">
+        <div class="g67" onmouseover="E7()" onmouseout="D7()" data-aos="fade-up">
             <img src="g7.jpg" class="hp1">
             <div class="im17">
                 <div style="position: absolute; bottom: 0; padding: 30px; visibility: hidden; color: white;"
@@ -267,7 +285,7 @@
                 </div>
             </div>
         </div>          
-        <div class="g68" onmouseover="E8()" onmouseout="D8()">
+        <div class="g68" onmouseover="E8()" onmouseout="D8()" data-aos="fade-up">
             <img src="g8.jpg" class="hp1">
             <div class="im18">
                 <div style="position: absolute; bottom: 0; padding: 30px; visibility: hidden; color: white;"
@@ -281,7 +299,8 @@
     <div  class="box2"><br>
         <span style="font: size 25px;"><b>SEE MORE WORKS</b></span>
     </div>        </div>
-</div>
+</div><div id="myDiv" class="mme">
+
 <div class="MainofPart5">
     <div class="grid-layout-4">
         <div class="g41">
@@ -364,6 +383,7 @@
 <span style="font: size 25px;"><b>SEE MORE WORKS &#9634;</b></span>
 </div>
 </div>
+<div id="Now">
 <div class="slider">
     <div class="flex-layout">
         <div class="f1">
@@ -388,7 +408,6 @@
                 </div>
         </div> </div> </div>
         <!-- <div class="f4"></div>
-
             <div class="f5"></div> -->
 
             <diV class="grid-layout-8" style="background-image: url(b4.jpg);">
@@ -423,7 +442,7 @@
    <div class="copywrite">
    Copywrite &#169; SoftHopper .All Rights Reserved
    </div>
-
+</div></div>
 <script>
      function s1() {
             document.getElementById("p1").style.visibility = "visible";
@@ -498,8 +517,28 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+var myVar;
 
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("Now").style.display = "block";
+
+//   document.getElementById("myDiv").style.visibility = "visible";
+
+}
 </script>
-   
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html> 
+
+
+
