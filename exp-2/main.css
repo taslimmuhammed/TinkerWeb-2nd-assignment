@@ -2,8 +2,75 @@ body {
     font-family: "Lato", sans-serif;
     margin: 0%;
     overflow-x: hidden;
-  }
 
+  }
+  .cursor{
+    height: 46px;
+    width: 3px;
+    background-color: rgb(225, 0, 102);
+  
+    animation: cursor .5s infinite;
+  }
+  @keyframes cursor {
+    from{
+      background-color: rgb(0, 0, 0);
+    }
+    to{
+      background-color: rgb(225, 0, 102);
+    }
+  }
+  .line{
+    display: flex;
+  }
+  #myDiv {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#Now{
+   display: none;
+}
+#loader_mini1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -100px 0 0 -100px;
+}
+.animation_2{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+
+
+  background-color: rgb(225, 0, 102);
+  border-radius: 50%;
+  animation: spin 1.5s  infinite;
+}
+
+
+
+@keyframes spin {
+  0% { opacity: 1; width: 0; height: 0; margin: 60px; }
+  100% { opacity: .1;  width: 120px; height: 120px; margin: 0px; }
+}
+
+/* div{
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+} */
   
   .sidenav {
     height: 100%;
@@ -43,6 +110,24 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+  .fg{
+    display: none;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .fg2{
+    padding: 2rem;
+  }
+  .fg3{
+    padding: 2rem;
+  }
+  .fg4{
+    padding: 2rem;
+  }
+  .fg1{
+    padding: 2rem;
+  }
+  .fg1:hover{color: rgb(225, 0, 102);}  .fg2:hover{color: rgb(225, 0, 102);}  .fg3:hover{color: rgb(225, 0, 102);}  .fg4:hover{color: rgb(225, 0, 102);}
   .g11{
     height: 100%;
     width: 100%;
@@ -175,7 +260,6 @@ h1{
 width: 100%;
 height: 500px;
 
-
  display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: 1fr, 1fr, 1fr, 1fr;;
@@ -216,9 +300,9 @@ align-items: center;
   "g41"
   "g42";
   
-  justify-items: center;
+  /* justify-items: center;
   align-items: center; 
-  
+   */
   } 
 
   .t4{
@@ -227,6 +311,7 @@ align-items: center;
     font-weight: 700;
     padding-left: 10vw;
     padding-right: 10vw;
+    text-align: center;
   }
   .sub{
     max-width: 80vw;
@@ -238,19 +323,20 @@ align-items: center;
 
 .animation{
   animation-name: website;
-  animation-duration: 10s;
+  animation-duration: 8s;
   /* animation-timing-function: ease-in-out; */
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   position: sticky;
-  width: 200px;
+  max-width: 175px;
   overflow: hidden;
+  animation-play-state: running;
 }
 
 @keyframes website {
   0%{width:0%;}
-  50%{width:50%;}
-  100%{width:100%;}
+  70%{width:100%;}
+  100%{width:0%;}
   
 }
 
@@ -260,6 +346,9 @@ align-items: center;
 
 
 @media only screen and (min-width: 1090px) {
+  #openbutton{
+    display: none;
+  }
   .g31{
     height: 100%;
     width: 100%;
@@ -633,6 +722,9 @@ padding-top: 4vw;
 
 
 @media only screen and (min-width: 1090px) {
+  .fg{
+    display: flex;
+  }
     .mn1{
         height: 100%;
         width: 100%;
@@ -861,6 +953,7 @@ padding-top: 4vw;
     
     justify-items: center;
     align-items: center; 
+    transition: grid-template-areas;
     
     } 
 
@@ -1798,6 +1891,19 @@ part5
         /* background-color: rgb(153, 110, 30); */
         grid-area: l3;
     }          
+    .grid-layout-l{
+        width: 80%;
+        height: 500px;
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 1fr;
+         grid-template-areas:
+         "l1 l2 l3";
+         background-color: rgba(0, 0, 0, 0);
+        
+         padding-top: 50px;
+    }
+            
     .grid-layout-l{
         width: 80%;
         height: 500px;
